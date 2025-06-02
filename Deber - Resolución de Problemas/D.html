@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Delgado | Estudiante de Tecnologías de la Información - Portafolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg,#dcfdeb, #fbffe1);
+    }
+    .hero-section {
+      background: linear-gradient(135deg,#dcfdeb, #fbffe1);
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .floating-box {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgb(255, 197, 219);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" style="background: linear-gradient(135deg,#dcfdeb, #fbffe1);">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Daniel Delgado</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Educación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section text-dark">
+    <div class="container">
+      <div class="floating-box d-inline-block">
+        <h1 class="display-4 fw-bold" style="color: #1a237e;">Hola, soy <span class="text-warning">Daniel Delgado</span></h1>
+        <img src="Yo.png" alt="Daniel Delgado" class="profile-img my-3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Presentación -->
+  <section class="py-5">
+    <div class="container">
+      <div class="floating-box text-center">
+        <p class="lead">Estudiante de Tecnologías de la Información</p>
+        <p>Estudiante de 5to semestre en la Universidad Técnica de Manabí, con interés en soluciones tecnológicas prácticas y modernas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2 class="section-title display-5 fw-bold">Sobre mí</h2>
+        <p class="lead mb-0">
+          Soy Daniel David Delgado Cedeño, tengo 21 años, estudiante de Tecnologías de la Información, actualmente cursando el 5to semestre en la Universidad Técnica de Manabí. Me apasiona la tecnología y busco desarrollarme profesionalmente creando, quisiera estudiar una segunda carrera que es la de Idiomas para mejorar mi inglés y expandirme en muchas más áreas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2 class="section-title display-5 fw-bold">Educación</h2>
+        <h5 class="text-primary mt-4">Estudiante de la carrera de Tecnologías de la Información</h5>
+        <h6 class="text-muted">2022 - Presente</h6>
+        <p class="mb-0">
+          Universidad Técnica de Manabí, formación enfocada en la gestión de infraestructuras tecnológicas, redes y soporte técnico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-5 bg-light" style="background: linear-gradient(135deg,#dcfdeb, #fbffe1);">
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2 class="section-title display-5 fw-bold mb-4">Contacto</h2>
+
+        <!-- Formulario de contacto -->
+        <form id="contactForm">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+            </button>
+          </div>
+        </form>
+
+        <!-- Información de contacto -->
+        <div class="row mt-5">
+          <div class="col-md-4 text-center mb-4">
+            <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+            <h5>Email</h5>
+            <p>danieldelgado0507@gmail.com</p>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+            <h5>Teléfono</h5>
+            <p>+593 96 323 7878  -  +593 97 883 1895</p>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+            <h5>Ubicación</h5>
+            <p>Cdla. Vicente Veliz, Calle 22 de Noviembre, Portoviejo, Manabí - Ecuador</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal personalizado -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thankYouModalLabel">Mensaje enviado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        ¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Funcionalidad del formulario -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var modal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+    modal.show();
+    this.reset();
+  });
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
